@@ -24,7 +24,7 @@ public class DeplacementJoueur : MonoBehaviour
 
         if (!zoneArrivee)
         {
-            Debug.LogWarning("Vous devez avoir un objet avec le script ZoneArrivee dans la scène");
+            Debug.LogWarning("Vous devez avoir un objet avec le script ZoneArrivee dans la scene");
         }
         else
         {
