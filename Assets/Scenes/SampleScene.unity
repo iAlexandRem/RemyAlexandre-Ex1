@@ -624,9 +624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.007
-  vitesseRotation: 0.05
-  tauxAggrandissement: 0.005
+  vitesseY: 0.004
+  vitesseRotation: 0.03
+  tauxAggrandissement: 0.003
 --- !u!1 &878885318
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,9 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.007
-  vitesseRotation: 0.05
-  tauxAggrandissement: 0.005
+  vitesseY: 0.004
+  vitesseRotation: 0.03
+  tauxAggrandissement: 0.003
 --- !u!1 &1138302535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,9 +1416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  vitesseY: 0.007
-  vitesseRotation: 0.05
-  tauxAggrandissement: 0.005
+  vitesseY: 0.004
+  vitesseRotation: 0.03
+  tauxAggrandissement: 0.003
 --- !u!1 &1868316948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,9 +1673,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.007
-  vitesseRotation: 0.05
-  tauxAggrandissement: 0.005
+  vitesseY: 0.004
+  vitesseRotation: 0.03
+  tauxAggrandissement: 0.003
 --- !u!1 &2058451470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,9 +1793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.007
-  vitesseRotation: 0.05
-  tauxAggrandissement: 0.005
+  vitesseY: 0.004
+  vitesseRotation: 0.03
+  tauxAggrandissement: 0.003
 --- !u!1 &2105138014
 GameObject:
   m_ObjectHideFlags: 0
