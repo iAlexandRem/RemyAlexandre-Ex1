@@ -32,7 +32,7 @@ public class DeplacementJoueur : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         // Variables temporaires pour gérer le déplacement et la rotation du joueur

@@ -4,7 +4,7 @@ public class DetectionProximiteJoueur : MonoBehaviour
 {
     GameObject cible;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
     void Start()
     {
         cible = FindAnyObjectByType<DeplacementJoueur>().gameObject;
@@ -14,7 +14,7 @@ public class DetectionProximiteJoueur : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         if (cible != null)
