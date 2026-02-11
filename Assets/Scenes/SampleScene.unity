@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.005
+  vitesseY: 0.007
   vitesseRotation: 0.05
   tauxAggrandissement: 0.005
 --- !u!1 &878885318
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.005
+  vitesseY: 0.007
   vitesseRotation: 0.05
   tauxAggrandissement: 0.005
 --- !u!1 &1138302535
@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  vitesseY: 0.005
+  vitesseY: 0.007
   vitesseRotation: 0.05
   tauxAggrandissement: 0.005
 --- !u!1 &1868316948
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.005
+  vitesseY: 0.007
   vitesseRotation: 0.05
   tauxAggrandissement: 0.005
 --- !u!1 &2058451470
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5c65ce5a38f4622865ed57826aabc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementEnnemi
-  vitesseY: 0.005
+  vitesseY: 0.007
   vitesseRotation: 0.05
   tauxAggrandissement: 0.005
 --- !u!1 &2105138014
