@@ -13,6 +13,11 @@ public class DeplacementJoueur : MonoBehaviour
     public float positionZoneX = 8f;
     public float positionZoneMinY = -3f;
     public float positionZoneMaxY = 3f;
+
+    private float nouvellePositionY;
+    private float ecartPositionY;
+    private bool peutBouger = false;
+
     GameObject zoneArrivee;
     GameObject cercleObstacles;
 
@@ -30,11 +35,13 @@ public class DeplacementJoueur : MonoBehaviour
         }
         else
         {
+            nouvellePositionY = Random.Range(positionZoneMinY, positionZoneMaxY); //Une 1ere position de zone d'arrivée aléatoire en Y pour commencer
+            zoneArrivee.transform.position = new Vector2(positionZoneX, nouvellePositionY);
             ReplacerZone();
         }
     }
 
-   
+
     void Update()
     {
         // Variables temporaires pour gérer le déplacement et la rotation du joueur
@@ -80,12 +87,26 @@ public class DeplacementJoueur : MonoBehaviour
             ReplacerZone();
             ReplacerJoueur();
         }
+
+        if (peutBouger == true)
+        {
+            zoneArrivee.transform.position = new Vector2(positionZoneX, zoneArrivee.transform.position.y + ecartPositionY * Time.deltaTime);
+
+            if (Mathf.Abs(nouvellePositionY - zoneArrivee.transform.position.y) < 0.01f) //Seulement si l'écart (toujours positif) entre nouvelle et position actuelle est presque nul
+            {
+                peutBouger = false; //La zone devrait s'arrêter
+            }
+        }
     }
 
     public void ReplacerZone()
     {
-        //On replace le joueur à sa position d'origine et on place la zone arrivée de manière aléatoire en Y
-        zoneArrivee.transform.position = new Vector2(positionZoneX, Random.Range(positionZoneMinY, positionZoneMaxY));
+        nouvellePositionY = Random.Range(positionZoneMinY, positionZoneMaxY); //Une nouvelle position de zone d'arrivée aléatoire en Y
+        ecartPositionY = nouvellePositionY - zoneArrivee.transform.position.y; //Calcul écart entre nouvelle et ancienne position en Y 
+        peutBouger = true; //Je veux une translation updatée entre les positions
+
+
+        //Les obstacles changent de position
         cercleObstacles.transform.position = transform.position = new Vector2(Random.Range(-5, 8), Random.Range(-4, 5)); // Position random d'une zone de la map
     }
 
