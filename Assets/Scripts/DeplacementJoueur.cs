@@ -23,7 +23,8 @@ public class DeplacementJoueur : MonoBehaviour
 
     void Start()
     {
-        positionInitialeJoueur = new Vector2(-7.67f, -4.0f);
+        positionInitialeJoueur = transform.position;
+        ReplacerJoueur(); //Sinon étrangement dans le Build, le joueur ne commence pas au bon endroit
 
         //On cherche les objets sur la scène
         zoneArrivee = FindAnyObjectByType<ZoneArrivee>().gameObject;
